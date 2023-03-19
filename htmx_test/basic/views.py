@@ -5,7 +5,8 @@ from . models import Person
 from . forms import PersonCreateForm
 
 def index(request):
-    return render(request, 'basic/index.html')
+    people = Person.objects.all()
+    return render(request, 'basic/index.html', context={"people": people})
 
 
 class PersonCreateView(CreateView):

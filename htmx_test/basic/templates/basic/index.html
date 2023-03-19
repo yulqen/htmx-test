@@ -1,7 +1,13 @@
 {% extends "basic/base.html" %}
 {% block title %}Home page{% endblock %}
 {% block content %}
-<h1>Basic thing</h1>
+<h1>People</h1>
+
+<ul>
+{% for person in people %}
+<li>{{ person.first_name }} {{ person.surname }}</li>
+{% endfor %}
+</ul>
 
     <a href="{% url 'basic:person-add' %}">Add a person here</a>
 
