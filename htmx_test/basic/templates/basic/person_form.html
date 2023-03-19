@@ -1,0 +1,13 @@
+<form action="{% url 'basic:person-add' %}" method="post">
+  {% csrf_token %}
+  <fieldset> 
+    <legend>
+      <h1>New person</h1>
+    </legend>
+    <label for="first_name">First Name</label>
+    <input type="text" name="first_name" id="first_name" value="">
+    <label for="surname">Surname</label>
+    <input type="text" name="surname" id="surname" value="">
+  </fieldset>
+    <input type="submit" value="Submit">
+</form>
