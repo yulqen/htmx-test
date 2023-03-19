@@ -1,0 +1,4 @@
+*__pycache__*
+.venv
+htmx_test/db.sqlite3
+poetry.lock

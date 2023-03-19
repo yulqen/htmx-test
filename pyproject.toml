@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "htmx-test"
+version = "0.1.0"
+description = "A test Django application."
+authors = ["Matthew Lemon <y@yulqen.org>"]
+license = "GPL3"
+readme = "README.md"
+packages = [{include = "htmx_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
