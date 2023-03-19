@@ -1,8 +1,8 @@
-<html>
-  <head>
-    <title>Basic</title>
-  </head>
-  <body>
-    <h1>Basic thing</h1>
-  </body>
-</html>
+{% extends "basic/base.html" %}
+{% block title %}Home page{% endblock %}
+{% block content %}
+<h1>Basic thing</h1>
+
+    <a href="{% url 'basic:person-add' %}">Add a person here</a>
+
+{% endblock %}
