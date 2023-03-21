@@ -3,10 +3,12 @@
 <html lang="en">
   <head>
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'basic/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'basic/style.css' %}">
   </head>
   <body>
     {% block content %}
     {% endblock %}
+    <script src="{% static 'basic/js/bootstrap.min.js' %}"></script>
   </body>
 </html>

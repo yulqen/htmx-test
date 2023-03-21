@@ -1,0 +1,9 @@
+{% extends "basic/base.html" %}
+{% block title %}Create new organisation{% endblock %}
+{% block content %}
+  <form method="post" class="needs-validation" novalidate>
+    {% csrf_token %}
+    {{ org_form.as_p }}
+    <button class="btn btn-primary" type="submit">Create organisation</button>
+  </form>
+{% endblock %}
